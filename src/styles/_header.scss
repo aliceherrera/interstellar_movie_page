@@ -1,0 +1,25 @@
+.header{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        height: 118px;
+        padding-left: 40px;
+    }
+
+    &__links{
+        display: flex;
+        padding-right: 40px;
+        &__item {
+            list-style: none;
+            padding-left: 20px;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
