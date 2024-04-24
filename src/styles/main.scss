@@ -47,11 +47,24 @@ $bgColor: rgb(80, 119, 25);
 }
 
 .trailers {
-    max-width: 10140;
+    max-width: 1140px;
+    margin: auto;
+
+    &__videos {
+        display: flex;
+
+        &__meio {
+            margin: 0 12px;
+        }
+    }
+
+    &__sinopse {
+        text-align: center;
+    }
 }
 
 body {
-    background-image: url(../images/fundov3.jpg); 
+    background-image: url(../images/outros/back.jpg); 
     background-attachment: fixed;
     background-size: cover;
 
