@@ -1,6 +1,8 @@
 @use 'hero';
 @use 'header';
 @use 'trailers';
+@use 'elenco';
+@use 'linha-temporal';
 
 *{
     margin: 0;
@@ -52,4 +54,11 @@ body {
     background-image: url(../images/outros/back.jpg); 
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 } 
+footer {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 80px;
+}

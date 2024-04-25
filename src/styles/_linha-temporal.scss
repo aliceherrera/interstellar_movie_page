@@ -1,0 +1,29 @@
+.linha-temporal {
+    &__legenda{
+        display: flex;
+        justify-content: space-between;
+
+        .murphy {
+            color: #FFBE3F;
+        }
+        .romilly {
+            color: #FF3F3F;
+        }
+        .doyle {
+            color: #FF74CF;
+        }
+        .amelia {
+            color: #D45BFF;
+        }
+        .tars {
+            color: #7CCF5E;
+        }
+        .cooper {
+            color: #3FBAFF;
+        }
+    }
+
+    &__timeline {
+        overflow-x: scroll;
+    }
+}

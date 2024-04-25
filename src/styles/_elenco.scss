@@ -1,0 +1,30 @@
+.elenco{
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 25px;
+        padding-bottom: 40px;
+
+        &__item__actor {
+            padding-top: 8px;
+        }
+    }
+
+    &__director {
+        display: flex;
+
+        &__about {
+            margin-left: 40px;            
+            position: relative;
+
+            &__title {
+                padding-bottom: 20px;
+            }
+
+            &__movies {
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+    }
+}
