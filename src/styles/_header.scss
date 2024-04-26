@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #000;
     transition: background-color 1s ease;
+    z-index: 1;
 
     &--is-hidden{
         background-color: transparent;
@@ -24,15 +25,13 @@
     }
 
     &__logo{
-        height: 118px;
+        height: 75px;
         padding-left: 40px;
         transition: opacity 1s ease;
 
-        // &--is-hidden{
-        //     opacity: 0;
-        //     visibility: hidden;
-        //     transition: opacity 1s ease;
-        // }
+        @media (max-width: 768px) {
+            height: 40px;
+        }
     }
 
     &__links{
@@ -44,6 +43,10 @@
             a{
                 text-decoration: none;
                 color: #fff;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;;
+                }
             } 
         }
     }

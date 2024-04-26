@@ -1,21 +1,34 @@
 .elenco{
     &__cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 25px;
+        grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
         padding-bottom: 40px;
+        list-style: none;
 
-        &__item__actor {
-            padding-top: 8px;
+        &__item {
+            &:hover {
+                scale: 105%;
+                background-color: #000;
+            }
+
+            &__actor {
+                padding-top: 8px;
+            }
         }
     }
 
     &__director {
         display: flex;
 
+        img:hover {
+            scale: 105%;
+            background-color: #000;
+        }
+
         &__about {
             margin-left: 40px;            
             position: relative;
+
 
             &__title {
                 padding-bottom: 20px;
