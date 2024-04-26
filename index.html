@@ -10,20 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header header--is-hidden">
         <div class="header__container">
                 <h1>
                     <img class="header__logo" src="./dist/images/logos/logo.png" alt="">
                 </h1>
                 <ul class="header__links">
                     <li class="header__links__item">
-                        <a class="text title" href="#">Trailers</a>
+                        <a class="text title" href="#trailer">Trailers</a>
                     </li> 
                     <li class="header__links__item">
-                        <a class="text title" href="#">Elenco</a>
+                        <a class="text title" href="#elenco">Elenco</a>
                     </li>
                     <li class="header__links__item">
-                        <a class="text title" href="#">Linha temporal</a>
+                        <a class="text title" href="#timeline">Linha temporal</a>
                     </li>
                 </ul>
         </div>
@@ -34,7 +34,7 @@
         </div>
     </section>
     <div class="content">
-        <section class="trailers">
+        <section id="trailer" class="trailers">
             <h2 class="title text--giant">Trailers</h2>
             <div class="trailers__videos">
                 <iframe width="384" height="216" src="https://www.youtube.com/embed/Rt2LHkSwdPQ?si=0w2KwoSwIMbe-aWb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -46,7 +46,7 @@
                 <p class="text--small">Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.</p>
             </div>
         </section>
-        <section class="elenco">
+        <section id="elenco" class="elenco">
             <h2 class="title text--giant">Elenco</h2>
             <ul class="elenco__cards">
                 <li class="elenco__cards__item">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="linha-temporal">
+        <section id="timeline" class="linha-temporal">
             <h2 class="title text--giant">Linha temporal</h2>
             <div class="linha-temporal__legenda">
                 <div class="text murphy">Murphy</div>
@@ -136,4 +136,5 @@
     </footer>
     
 </body>
+<script src="./dist/scripts/main.js"></script>
 </html>
