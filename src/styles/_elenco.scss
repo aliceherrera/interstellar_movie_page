@@ -1,11 +1,19 @@
 .elenco{
     &__cards {
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
         padding-bottom: 40px;
         list-style: none;
 
         &__item {
+
+            @media (max-width: 768px) {
+                margin-bottom: 24px;;
+                flex-direction: column;
+                align-items: center;
+            }
+
             &:hover {
                 scale: 105%;
                 background-color: #000;
@@ -20,6 +28,15 @@
     &__director {
         display: flex;
 
+        @media (max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                max-width: 208px;
+            }
+        }
+
         img:hover {
             scale: 105%;
             background-color: #000;
@@ -29,6 +46,10 @@
             margin-left: 40px;            
             position: relative;
 
+            @media (max-width: 768px) {
+                margin-top: 24px;
+            }
+
 
             &__title {
                 padding-bottom: 20px;
@@ -37,6 +58,11 @@
             &__movies {
                 position: absolute;
                 bottom: 40px;
+
+                @media (max-width: 768px) {
+                    position: initial;
+                    margin-top: 24px;
+                }
             }
         }
     }
